@@ -1,0 +1,62 @@
+.header {
+  padding: 18px 70px 38px 70px;
+}
+
+.header__content {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__auth {
+  align-self: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.header__registerLink {
+  margin: 0 30px 0 0;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header__loginLink {
+  padding: 8px 20px;
+  border-radius: 3px;
+  color: #000;
+  text-decoration: none;
+  background-color: #3DDC84;
+  display: block;
+}
+
+@media screen and (max-width: 769px){
+  .header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .header {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 32px;
+  }
+
+  .header__auth {
+    font-size: 10px;
+  }
+
+  .header__registerLink {
+    margin: 0 14px 0 0;
+  }
+
+  .header__loginLink {
+    padding: 5px 12px;
+  }
+}
