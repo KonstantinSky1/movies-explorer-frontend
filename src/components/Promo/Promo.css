@@ -2,11 +2,7 @@
   padding: 0 40px 0 40px;
 }
 
-.promo__contentWrapper {
-  padding-bottom: 30px;
-}
-
-.promo__content {
+.promo__container {
   max-width: 1200px;
   min-height: 493px;
   margin: 0 auto;
@@ -35,7 +31,7 @@
     padding-right: 20px;
   }
 
-  .promo__content {
+  .promo__container {
     min-height: 834px;
   }
 
@@ -61,7 +57,7 @@
     padding-right: 14px;
   }
 
-  .promo__content {
+  .promo__container {
     min-height: 586px;
     padding-bottom: 17px;
   }
