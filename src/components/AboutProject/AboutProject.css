@@ -39,11 +39,11 @@
   letter-spacing: -0.04em;
   }
 
-  .aboutProject__columnText {
-    margin: 0;
-    font-size: 14px;
-    line-height: 20px;
-  }
+.aboutProject__columnText {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
 
 .aboutProject__weeks {
   font-size: 14px;
