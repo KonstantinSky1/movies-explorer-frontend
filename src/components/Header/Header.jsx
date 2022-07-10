@@ -3,6 +3,7 @@ import { Route, Switch, Link } from 'react-router-dom';
 
 import './Header.css';
 import headerLogo from '../../images/headerLogo.svg';
+import Navigation from '../Navigation/Navigation.jsx';
 
 function Header() {
   return (
@@ -14,7 +15,7 @@ function Header() {
           alt="Логотип"
         />
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <div className="header__auth">
               <Link
                 to="/signup"
@@ -29,6 +30,10 @@ function Header() {
                 Войти
               </Link>
             </div>
+          </Route>
+
+          <Route path="/movies">
+            <Navigation />
           </Route>
         </Switch>
       </div>
