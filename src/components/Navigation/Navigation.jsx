@@ -38,7 +38,7 @@ function Navigation() {
             <NavLink
               to="/savedmovies"
               activeClassName="navigation__movieLink_isActive"
-              className="navigation__SavedMovieLink"
+              className="navigation__movieLink"
             >
               Сохранённые фильмы
             </NavLink>

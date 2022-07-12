@@ -17,15 +17,6 @@
 }
 
 .navigation__movieLink {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  text-decoration: none;
-  color: #fff;
-  display: block;
-}
-
-.navigation__SavedMovieLink {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -61,6 +52,10 @@
 
 .navigation__movieLink_isVisible {
   display: none;
+}
+
+.navigation__movieLink_isActive {
+  font-weight: 500;
 }
 
 @media screen and (max-width: 769px){
@@ -154,13 +149,6 @@
     line-height: 22px;
     width: fit-content;
     margin: 0 auto;
-  }
-
-  .navigation__SavedMovieLink {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
   }
 
   .navigation__movieLink_isActive {
