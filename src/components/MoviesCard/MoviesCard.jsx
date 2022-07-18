@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Route, Switch, Link } from 'react-router-dom';
 
 import './MoviesCard.css';
 
@@ -26,12 +27,26 @@ function MoviesCard({ film }) {
           <h2 className="film-card__title">
             {film.nameRU}
           </h2>
-          <button
-          onClick={handleClick}
-            className={`film-card__button-save-film ${isSaved && "film-card__button-save-film_type_saved"}`}
-            type="button"
-            aria-label="Сохранить фильм"
-          ></button>
+
+          <Switch>
+            <Route path="/movies">
+              <button
+              onClick={handleClick}
+              className={`film-card__button-save-film ${isSaved && "film-card__button-save-film_type_saved"}`}
+              type="button"
+              aria-label="Сохранить фильм"
+              ></button>
+            </Route>
+
+            <Route path="/saved-movies">
+              <button
+              onClick={handleClick}
+              className="film-card__button-delete-film"
+              type="button"
+              aria-label="Сохранить фильм"
+              ></button>
+            </Route>
+          </Switch>
         </div>
 
         <p className="film-card__duration">

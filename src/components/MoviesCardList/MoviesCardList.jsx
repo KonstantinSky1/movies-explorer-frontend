@@ -16,12 +16,13 @@ function MoviesCardList() {
             />
           )}
         </ul>
+
         <button
-            className="moviesCardList__button-add"
-            type="button"
-            aria-label="Кнопка ещё"
-          >
-            Ещё
+          className="moviesCardList__button-add"
+          type="button"
+          aria-label="Кнопка ещё"
+        >
+          Ещё
         </button>
       </div>
     </section>

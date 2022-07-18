@@ -13,7 +13,7 @@ function SearchForm() {
             <button className="searchForm__button" type="submit">Поиск</button>
           </div>
 
-        <FilterCheckbox />
+          <FilterCheckbox />
         </form>
       </div>
     </section>

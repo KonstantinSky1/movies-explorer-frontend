@@ -2,42 +2,50 @@ import React from 'react';
 import { Route, Switch, Link } from 'react-router-dom';
 
 import './Header.css';
-import headerLogo from '../../images/headerLogo.svg';
 import Navigation from '../Navigation/Navigation.jsx';
+import LogoLink from '../LogoLink/LogoLink.jsx';
 
 function Header() {
   return (
-    <header className="header">
-      <div className="header__container">
-        <img
-          className="header__logo"
-          src={headerLogo}
-          alt="Логотип"
-        />
-        <Switch>
-          <Route exact path="/">
-            <div className="header__auth">
-              <Link
-                to="/signup"
-                className="header__registerLink"
-              >
-                Регистрация
-              </Link>
-              <Link
-                to="/signin"
-                className="header__loginLink"
-              >
-                Войти
-              </Link>
-            </div>
-          </Route>
+    <Route path="/(|movies|saved-movies|profile)">
+      <header className="header">
+        <div className="header__container">
+          <LogoLink />
 
-          <Route path="/movies">
-            <Navigation />
-          </Route>
-        </Switch>
-      </div>
-    </header>
+          {/* временный код для вёрстки: */}
+          <Switch>
+            <Route exact path="/">
+              <div className="header__auth">
+                <Link
+                  to="/signup"
+                  className="header__registerLink"
+                >
+                  Регистрация
+                </Link>
+                <Link
+                  to="/signin"
+                  className="header__loginLink"
+                >
+                  Войти
+                </Link>
+              </div>
+            </Route>
+
+            <Route path="/movies">
+              <Navigation />
+            </Route>
+
+            <Route path="/saved-movies">
+              <Navigation />
+            </Route>
+
+            <Route path="/profile">
+              <Navigation />
+            </Route>
+          </Switch>
+        </div>
+      </header>
+    </Route>
   );
 }
 

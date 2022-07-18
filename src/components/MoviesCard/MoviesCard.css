@@ -24,6 +24,7 @@
 .film-card__description {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 0 10px 0;
 }
 
@@ -43,6 +44,15 @@
   background: transparent url('../../images/filmButtonSave.svg') no-repeat;
 }
 
+.film-card__button-delete-film {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  background: transparent url('../../images/filmButtonDelete.svg') no-repeat;
+}
+
 .film-card__duration {
   margin: 0;
   font-size: 11px;
@@ -52,4 +62,16 @@
 
 .film-card__button-save-film_type_saved {
   background: url('../../images/filmButtonSaveActive.svg') no-repeat;
+}
+
+@media screen and (max-width: 989px){
+  .film-card__image {
+    height: 190px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .film-card__image {
+    height: 168px;
+  }
 }

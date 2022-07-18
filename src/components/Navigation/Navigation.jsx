@@ -36,7 +36,7 @@ function Navigation() {
               Фильмы
             </NavLink>
             <NavLink
-              to="/savedmovies"
+              to="/saved-movies"
               activeClassName="navigation__movieLink_isActive"
               className="navigation__movieLink"
             >
@@ -46,7 +46,7 @@ function Navigation() {
 
           <div className="navigation__accountBlock">
             <NavLink
-              to="/delete"
+              to="/profile"
               activeClassName="navigation__movieLink_isActive"
               className="navigation__accountLink"
             >

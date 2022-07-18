@@ -83,6 +83,10 @@
     padding-right: 14px;
   }
 
+  .searchForm__container {
+    padding-bottom: 63px;
+  }
+
   .searchForm__input::placeholder {
     font-size: 16px;
     line-height: 16px;
