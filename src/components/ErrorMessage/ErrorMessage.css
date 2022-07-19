@@ -1,0 +1,13 @@
+.errorMessage {
+  padding: 10px 0 0 0;
+  opacity: 0;
+  display: block;
+  position: absolute;
+}
+
+.errorMessage_visible {
+  font-size: 10px;
+  line-height: 12px;
+  color: #EE3465;
+  opacity: 1;
+}
