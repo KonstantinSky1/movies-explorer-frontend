@@ -10,18 +10,21 @@ import Movies from '../Movies/Movies.jsx';
 import SavedMovies from '../SavedMovies/SavedMovies.jsx';
 import Profile from '../Profile/Profile.jsx';
 import Register from '../Register/Register.jsx';
+import Login from '../Login/Login.jsx';
+import PageNotFound from '../PageNotFound/PageNotFound.jsx';
 
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       {/* <Main /> */}
       {/* <Movies /> */}
       {/* <SavedMovies /> */}
       {/* <Profile /> */}
-      <Register />
-
-      <Footer />
+      {/* <Register /> */}
+      {/* <Login /> */}
+      <PageNotFound />
+      {/* <Footer /> */}
     </>
   );
 }
