@@ -33,6 +33,9 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .film-card__button-save-film {
@@ -44,6 +47,10 @@
   background: transparent url('../../images/filmButtonSave.svg') no-repeat;
 }
 
+.film-card__button-save-film:hover {
+  opacity: .5;
+}
+
 .film-card__button-delete-film {
   border: none;
   cursor: pointer;
@@ -51,6 +58,10 @@
   width: 8px;
   height: 8px;
   background: transparent url('../../images/filmButtonDelete.svg') no-repeat;
+}
+
+.film-card__button-delete-film:hover {
+  opacity: .5;
 }
 
 .film-card__duration {

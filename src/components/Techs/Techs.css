@@ -68,6 +68,12 @@
   padding: 21px 0;
 }
 
+.techs_listItem:hover {
+  position: relative;
+  top: 2px;
+  box-shadow: 2px 2px 3px 3px #1fd6f7;
+}
+
 @media screen and (max-width: 860px){
   .techs {
     padding-left: 50px;

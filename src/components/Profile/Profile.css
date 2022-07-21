@@ -77,6 +77,11 @@
   font-size: 13px;
   line-height: 16px;
   color: #fff;
+  cursor: pointer;
+}
+
+.profile__buttonSubmit:hover {
+  opacity: .5;
 }
 
 .profile__logOutLink {
@@ -87,6 +92,10 @@
   font-size: 13px;
   line-height: 16px;
   color: #EE3465;
+}
+
+.profile__logOutLink:hover {
+  opacity: .5;
 }
 
 @media screen and (max-width: 769px){

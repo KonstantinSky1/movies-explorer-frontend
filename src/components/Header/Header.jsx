@@ -11,8 +11,6 @@ function Header() {
       <header className="header">
         <div className="header__container">
           <LogoLink />
-
-          {/* временный код для вёрстки: */}
           <Switch>
             <Route exact path="/">
               <div className="header__auth">
@@ -31,15 +29,7 @@ function Header() {
               </div>
             </Route>
 
-            <Route path="/movies">
-              <Navigation />
-            </Route>
-
-            <Route path="/saved-movies">
-              <Navigation />
-            </Route>
-
-            <Route path="/profile">
+            <Route path="(|movies|saved-movies|profile)">
               <Navigation />
             </Route>
           </Switch>

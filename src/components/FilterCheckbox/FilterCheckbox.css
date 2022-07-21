@@ -23,6 +23,7 @@
   vertical-align: top;
   background-color: #EBEBEB;
   transition: .2s;
+  cursor: pointer;
 }
 
 .filterCheckbox__switch::before {

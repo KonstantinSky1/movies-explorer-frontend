@@ -1,11 +1,11 @@
 import React from 'react';
 
 import './AboutMe.css';
-import studentPhoto from '../../images/delete.jpg';
+import studentPhoto from '../../images/KonstantinSolnishko.jpg';
 
 function AboutMe() {
   return (
-    <section className="aboutMe">
+    <section className="aboutMe" id="aboutMe">
       <div className="aboutMe__container">
         <h3 className="aboutMe__headerTitle">Студент</h3>
         <div className="aboutMe__columns">

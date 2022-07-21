@@ -1,5 +1,5 @@
 import React from "react";
-// import { Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import './App.css';
 
@@ -16,15 +16,37 @@ import PageNotFound from '../PageNotFound/PageNotFound.jsx';
 function App() {
   return (
     <>
-      {/* <Header /> */}
-      {/* <Main /> */}
-      {/* <Movies /> */}
-      {/* <SavedMovies /> */}
-      {/* <Profile /> */}
-      {/* <Register /> */}
-      {/* <Login /> */}
-      <PageNotFound />
-      {/* <Footer /> */}
+      <Header />
+      <Switch>
+        <Route exact path="/">
+          <Main />
+        </Route>
+
+        <Route path="/movies">
+          <Movies />
+        </Route>
+
+        <Route path="/saved-movies">
+          <SavedMovies />
+        </Route>
+
+        <Route path="/profile">
+          <Profile />
+        </Route>
+
+        <Route path="/signin">
+          <Login />
+        </Route>
+
+        <Route path="/signup">
+          <Register />
+        </Route>
+
+        <Route path="*">
+          <PageNotFound />
+        </Route>
+      </Switch>
+      <Footer />
     </>
   );
 }

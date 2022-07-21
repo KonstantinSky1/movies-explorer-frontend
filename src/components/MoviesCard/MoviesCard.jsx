@@ -4,13 +4,11 @@ import { Route, Switch, Link } from 'react-router-dom';
 import './MoviesCard.css';
 
 function MoviesCard({ film }) {
-  //временный код для вёрстки
   const [isSaved, setIsSaved] = useState(false);
 
   function handleClick() {
     setIsSaved(!isSaved);
   }
-  //===========================
 
   return (
     <li className="film-card">
@@ -27,26 +25,26 @@ function MoviesCard({ film }) {
           <h2 className="film-card__title">
             {film.nameRU}
           </h2>
+          <div>
+            <Switch>
+                <Route path="/movies">
+                  <button
+                    onClick={handleClick}
+                    className={`film-card__button-save-film ${isSaved && "film-card__button-save-film_type_saved"}`}
+                    type="button"
+                    aria-label="Сохранить фильм"
+                  ></button>
+                </Route>
 
-          <Switch>
-            <Route path="/movies">
-              <button
-              onClick={handleClick}
-              className={`film-card__button-save-film ${isSaved && "film-card__button-save-film_type_saved"}`}
-              type="button"
-              aria-label="Сохранить фильм"
-              ></button>
-            </Route>
-
-            <Route path="/saved-movies">
-              <button
-              onClick={handleClick}
-              className="film-card__button-delete-film"
-              type="button"
-              aria-label="Сохранить фильм"
-              ></button>
-            </Route>
-          </Switch>
+                <Route path="/saved-movies">
+                  <button
+                    className="film-card__button-delete-film"
+                    type="button"
+                    aria-label="Сохранить фильм"
+                  ></button>
+                </Route>
+            </Switch>
+          </div>
         </div>
 
         <p className="film-card__duration">

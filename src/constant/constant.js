@@ -1,7 +1,7 @@
 const filmList = [
   {
     "id":1,
-    "nameRU": "33 слова о дизайне",
+    "nameRU": "33 слоhgggggggggggggggggggggggggggggggggggggggghggggggggggggggggggggggggggggghghghghghghghghghghgва о дизайне",
     "duration": "1ч42м",
     "image": "https://klike.net/uploads/posts/2019-05/1556708032_1.jpg"
   },

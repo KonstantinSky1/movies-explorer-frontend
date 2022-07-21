@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import './Navigation.css';
 
 function Navigation() {
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
+
+  useEffect(() => {
+    if (isBurgerOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "visible";
+    }
+  }, [isBurgerOpen]);
 
   function handleBurgerClick() {
     setIsBurgerOpen(!isBurgerOpen);
@@ -19,12 +27,16 @@ function Navigation() {
         <span></span>
       </div>
 
+      <div className={`navigation__cover ${isBurgerOpen ? "active" : ""}`}></div>
+
       <nav className={`navigation__links ${isBurgerOpen ? "active" : ""}`}>
         <div className="navigation__content">
           <div className="navigation__moviesBlock">
             <NavLink
               exact to="/"
               className="navigation__movieLink navigation__movieLink_isVisible"
+              // убрать строчку после сдачи этапа вёрстки:
+              onClick={() => document.body.style.overflow = "visible"}
             >
               Главная
             </NavLink>

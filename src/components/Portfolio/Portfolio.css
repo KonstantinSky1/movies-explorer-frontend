@@ -40,6 +40,10 @@
   background: url('../../images/arrowIcon.svg') no-repeat center right;
 }
 
+.portfolio__link:hover {
+  opacity: .5;
+}
+
 @media screen and (max-width: 769px){
   .portfolio__link {
     font-size: 28px;
